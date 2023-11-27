@@ -1,0 +1,130 @@
+/* navigation */
+
+nav {
+display: none;
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+background-color: #333;
+position: absolute;
+right: 0;
+top: 50px;
+}
+
+nav.show {
+display: flex;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 10px;
+}
+
+.menu-icon {
+display: block;
+cursor: pointer;
+font-size: 24px;
+position: fixed;
+right: 10px;
+}
+
+/* sections */
+
+body {
+color: #333;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Sans;
+background-color:#f0f0e8
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+color: white;
+padding: 0 10px;
+position: fixed;
+height: 50px;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 50px;
+}
+
+.item {
+flex: 0 0 50%;
+box-sizing: border-box;
+padding: 5px;
+text-align: left;
+}
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+padding: 5px;
+align-items: flex-end;
+}
+
+.flex-column {
+flex: 0 0 50%;
+padding: 0 0 5px 0;
+}
+
+.flex-column-wide {
+flex: 0 0 100%;
+padding: 0 0 5px 0;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+
+nav {
+display: none;
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+background-color: #333;
+position: absolute;
+right: 0;
+top: 50px;
+}
+
+nav.show{display:flex;}
+
+.item{flex: 0 0 100%;}
+
+}
+
+/* fonts */
+
+a{color:white; text-decoration: none;}
+h1{font-family:'Playfair Display'; font-size:45px; font-weight:900; line-height:1; margin:0; padding:0;}
+h2{font-family:'Open Sans'; font-size:30px; font-weight:800; line-height:1; margin:0; padding:0;}
+h3{font-family:'Open Sans'; font-size:24px; font-weight:800; line-height:1; margin:0; padding:0;}
+h4{font-family:'Open Sans'; font-size:14px; font-weight:300; line-height:1; margin:0; padding:0;}
+p{font-family:Sans; font-size:12px; font-weight:600; line-height:1.2; margin:0; padding:0;}
+
+.rank {
+display: inline-block;
+background-color: rgba(255, 255, 0, 1);
+font-size:12px;
+font-weight:600;
+padding: 0 1px;
+}
+
+.unit {
+font-size:12px;
+}
+
+hr{margin:5px 0 0 0; padding:0;}
