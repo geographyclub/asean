@@ -73,7 +73,7 @@ const jsonItem = document.createElement('div');
 jsonItem.classList.add('item');
 
 jsonItem.innerHTML = `
-<div class="flex-column-wide"><h1 id="${item.country}">${item.country}</h1><hr style="border-top:2px solid"></div>
+<div class="flex-column-wide"><h1 id="${item.country}">${item.country}</h1><hr></div>
 <div class="flex-container">
   <div class="flex-column"><h3>${item.pop.toLocaleString()}<span class="rank">#${item.pop_rank}</span></h3><h4>Population</h4></div>
   <div class="flex-column"><h3>${item.pop_rate.toLocaleString()}<span class="rank">#${item.pop_rate_rank}</span></h3><h4>Pop Growth Rate (%)</h4></div>
