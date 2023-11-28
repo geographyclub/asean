@@ -90,6 +90,9 @@ jsonItem.innerHTML = `
   <div class="flex-column"><h3>${item.gdp.toLocaleString()}<span class="rank">#${item.gdp_rank}</span></h3><h4>GDP (US$ millions)</h4></div>
   <div class="flex-column"><h3>${item.gdp_rate.toLocaleString()}<span class="rank">#${item.gdp_rate_rank}</span></h3><h4>GDP Growth Rate (%)</h4></div>
   <div class="flex-column"><h3>${item.gdp_capita.toLocaleString()}<span class="rank">#${item.gdp_capita_rank}</span></h3><h4>GDP Per Capita (US$)</h4></div>
+  <div class="flex-column"><h3>${item.exports_to_gdp.toLocaleString()}<span class="rank">#${item.exports_to_gdp_rank}</span></h3><h4>Exports-to-GDP (%)</h4></div>
+  <div class="flex-column"><h3>${item.imports_to_gdp.toLocaleString()}<span class="rank">#${item.imports_to_gdp_rank}</span></h3><h4>Imports-to-GDP (%)</h4></div>
+  <div class="flex-column"><h3>${item.total_trade_to_gdp.toLocaleString()}<span class="rank">#${item.total_trade_to_gdp_rank}</span></h3><h4>Trade-to-GDP (%)</h4></div>
 </div>
 
 <div class="flex-container">
@@ -107,9 +110,6 @@ jsonItem.innerHTML = `
   <div class="flex-column"><h3>${item.imports_value_rate.toLocaleString()}<span class="rank">#${item.imports_value_rate_rank}</span></h3><h4>Imports Growth Rate (%)</h4></div>
   <div class="flex-column"><h3>${item.total_trade.toLocaleString()}<span class="rank">#${item.total_trade_rank}</span></h3><h4>Total Trade (US$ millions)</h4></div>
   <div class="flex-column"><h3>${item.total_trade_value_rate.toLocaleString()}<span class="rank">#${item.total_trade_value_rate_rank}</span></h3><h4>Trade Growth Rate (%)</h4></div>
-  <div class="flex-column"><h3>${item.exports_to_gdp.toLocaleString()}<span class="rank">#${item.exports_to_gdp_rank}</span></h3><h4>Exports-to-GDP (%)</h4></div>
-  <div class="flex-column"><h3>${item.imports_to_gdp.toLocaleString()}<span class="rank">#${item.imports_to_gdp_rank}</span></h3><h4>Imports-to-GDP (%)</h4></div>
-  <div class="flex-column"><h3>${item.total_trade_to_gdp.toLocaleString()}<span class="rank">#${item.total_trade_to_gdp_rank}</span></h3><h4>Trade-to-GDP (%)</h4></div>
 </div>
 `;
 container.appendChild(jsonItem);
