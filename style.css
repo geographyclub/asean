@@ -73,11 +73,13 @@ display: flex;
 flex-wrap: wrap;
 padding: 5px;
 align-items: flex-end;
+overflow: hidden;
 }
 
 .flex-column {
 flex: 0 0 50%;
 padding: 0 0 5px 0;
+min-width:160px;
 }
 
 .flex-column-wide {
