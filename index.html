@@ -82,12 +82,12 @@ jsonItem.innerHTML = `
   <div class="flex-column"><h3>${item.labour_rate.toLocaleString()}<span class="rank">#${item.labour_rate_rank}</span></h3><h4>Labour Rate (%)</h4></div>
   <div class="flex-column"><h3>${item.unemployment_rate.toLocaleString()}<span class="rank">#${item.unemployment_rate_rank}</span></h3><h4>Unemployment Rate (%)</h4></div>
   <div class="flex-column"><h3>${item.inflation_rate.toLocaleString()}<span class="rank">#${item.inflation_rate_rank}</span></h3><h4>Inflation Rate (%)</h4></div>
-  <div class="flex-column"><h3>${item.visitor_arrivals.toLocaleString()}<span class="rank">#${item.visitor_arrivals_rank}</span></h3><h4>Visitor Arrivals (millions)</h4></div>
+  <div class="flex-column"><h3>${item.visitor_arrivals.toLocaleString()}<span class="rank">#${item.visitor_arrivals_rank}</span></h3><h4>Visitor Arrivals (mil)</h4></div>
 </div>
 
 <div class="flex-container">
   <div class="flex-column-wide"><h4 style="font-weight:600; font-size:10px">GROSS DOMESTIC PRODUCT <span style="color:#aaa">${item.country.toUpperCase()}</span></h4><hr></div>
-  <div class="flex-column"><h3>${item.gdp.toLocaleString()}<span class="rank">#${item.gdp_rank}</span></h3><h4>GDP (US$ millions)</h4></div>
+  <div class="flex-column"><h3>${item.gdp.toLocaleString()}<span class="rank">#${item.gdp_rank}</span></h3><h4>GDP (US$ mil)</h4></div>
   <div class="flex-column"><h3>${item.gdp_rate.toLocaleString()}<span class="rank">#${item.gdp_rate_rank}</span></h3><h4>GDP Growth Rate (%)</h4></div>
   <div class="flex-column"><h3>${item.gdp_capita.toLocaleString()}<span class="rank">#${item.gdp_capita_rank}</span></h3><h4>GDP Per Capita (US$)</h4></div>
   <div class="flex-column"><h3>${item.exports_to_gdp.toLocaleString()}<span class="rank">#${item.exports_to_gdp_rank}</span></h3><h4>Exports-to-GDP (%)</h4></div>
@@ -97,19 +97,19 @@ jsonItem.innerHTML = `
 
 <div class="flex-container">
   <div class="flex-column-wide"><h4 style="font-weight:600; font-size:10px">TRADE <span style="color:#aaa">${item.country.toUpperCase()}</span></h4><hr></div>
-  <div class="flex-column"><h3>${item.exports.toLocaleString()}<span class="rank">#${item.exports_rank}</span></h3><h4>Exports (US$ millions)</h4></div>
+  <div class="flex-column"><h3>${item.exports.toLocaleString()}<span class="rank">#${item.exports_rank}</span></h3><h4>Exports (US$ mil)</h4></div>
   <div class="flex-column"><h3>${item.exports_value_rate.toLocaleString()}<span class="rank">#${item.exports_value_rate_rank}</span></h3><h4>Exports Growth Rate (%)</h4></div>
-  <div class="flex-column"><h3>${item.imports.toLocaleString()}<span class="rank">#${item.imports_rank}</span></h3><h4>Imports (US$ millions)</h4></div>
+  <div class="flex-column"><h3>${item.imports.toLocaleString()}<span class="rank">#${item.imports_rank}</span></h3><h4>Imports (US$ mil)</h4></div>
   <div class="flex-column"><h3>${item.imports_value_rate.toLocaleString()}<span class="rank">#${item.imports_value_rate_rank}</span></h3><h4>Imports Growth Rate (%)</h4></div>
-  <div class="flex-column"><h3>${item.total_trade.toLocaleString()}<span class="rank">#${item.total_trade_rank}</span></h3><h4>Total Trade (US$ millions)</h4></div>
+  <div class="flex-column"><h3>${item.total_trade.toLocaleString()}<span class="rank">#${item.total_trade_rank}</span></h3><h4>Total Trade (US$ mil)</h4></div>
   <div class="flex-column"><h3>${item.total_trade_value_rate.toLocaleString()}<span class="rank">#${item.total_trade_value_rate_rank}</span></h3><h4>Trade Growth Rate (%)</h4></div>
 </div>
 
 <div class="flex-container">
   <div class="flex-column-wide"><h4 style="font-weight:600; font-size:10px">FOREIGN DIRECT INVESTMENT <span style="color:#aaa">${item.country.toUpperCase()}</span></h4><hr></div>
-  <div class="flex-column"><h3>${item.fdi.toLocaleString()}<span class="rank">#${item.fdi_rank}</span></h3><h4>FDI (US$ millions)</h4></div>
+  <div class="flex-column"><h3>${item.fdi.toLocaleString()}<span class="rank">#${item.fdi_rank}</span></h3><h4>FDI (US$ mil)</h4></div>
   <div class="flex-column"><h3>${item.fdi_change_rate.toLocaleString()}<span class="rank">#${item.fdi_change_rate_rank}</span></h3><h4>FDI Change Rate (%)</h4></div>
-  <div class="flex-column"><h3>${item.fdi_change.toLocaleString()}<span class="rank">#${item.fdi_change_rank}</span></h3><h4>FDI Change (US$ millions)</h4></div>
+  <div class="flex-column"><h3>${item.fdi_change.toLocaleString()}<span class="rank">#${item.fdi_change_rank}</span></h3><h4>FDI Change (US$ mil)</h4></div>
 </div>
 `;
 container.appendChild(jsonItem);
