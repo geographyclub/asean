@@ -69,6 +69,7 @@ text-align: left;
 }
 
 .flex-container {
+position:relative;
 display: flex;
 flex-wrap: wrap;
 padding: 5px;
@@ -85,6 +86,15 @@ min-width:160px;
 .flex-column-wide {
 flex: 0 0 100%;
 padding: 0 0 5px 0;
+}
+
+.image {
+height: 100%;
+width: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 /* mobile */
