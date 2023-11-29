@@ -66,10 +66,11 @@ flex: 0 0 50%;
 box-sizing: border-box;
 padding: 5px;
 text-align: left;
+position:relative;
+overflow: hidden;
 }
 
 .flex-container {
-position:relative;
 display: flex;
 flex-wrap: wrap;
 padding: 5px;
@@ -89,7 +90,6 @@ padding: 0 0 5px 0;
 }
 
 .image {
-height: 100%;
 width: auto;
 position: absolute;
 top: 50%;
