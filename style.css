@@ -58,7 +58,7 @@ z-index: 1000;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-margin-top: 50px;
+margin-top: 80px;
 }
 
 .item {
@@ -74,7 +74,6 @@ display: flex;
 flex-wrap: wrap;
 padding: 5px;
 align-items: flex-end;
-overflow: hidden;
 }
 
 .flex-column {
@@ -154,3 +153,23 @@ font-size:12px;
 }
 
 hr{margin:5px 0 0 0; padding:0;}
+
+#ticker-container {
+position: fixed;
+top: 50px;
+left: 0;
+overflow: hidden;
+height: 30px;
+width:100%;
+border:0;
+z-index:100;
+background-color: #333;
+color: #f0f0e8;
+}
+
+#ticker-content {
+white-space: nowrap;
+position: absolute;
+overflow: hidden;
+}
+
