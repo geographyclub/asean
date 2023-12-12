@@ -58,7 +58,7 @@ z-index: 1000;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-margin-top: 80px;
+margin-top: 50px;
 }
 
 .item {
@@ -74,6 +74,7 @@ display: flex;
 flex-wrap: wrap;
 padding: 5px;
 align-items: flex-end;
+overflow: hidden;
 }
 
 .flex-column {
@@ -133,10 +134,10 @@ nav.show{display:flex;}
 /* fonts */
 
 a{color:white; text-decoration: none;}
-h1{font-family:'Playfair Display'; font-size:45px; font-weight:600; line-height:1; margin:0; padding:0;}
+h1{font-family:'Playfair Display'; font-size:45px; font-weight:900; line-height:1; margin:0; padding:0;}
 h2{font-family:'Open Sans'; font-size:30px; font-weight:800; line-height:1; margin:0; padding:0;}
 h3{font-family:'Open Sans'; font-size:24px; font-weight:800; line-height:1; margin:0; padding:0;}
-h4{font-family:'Open Sans'; font-size:12px; font-weight:600; line-height:1; margin:0; padding:0;}
+h4{font-family:'Open Sans'; font-size:14px; font-weight:300; line-height:1; margin:0; padding:0;}
 p{font-family:Sans; font-size:12px; font-weight:600; line-height:1.2; margin:0; padding:0;}
 
 .rank {
@@ -153,23 +154,3 @@ font-size:12px;
 }
 
 hr{margin:5px 0 0 0; padding:0;}
-
-#ticker-container {
-position: fixed;
-top: 50px;
-left: 0;
-overflow: hidden;
-height: 30px;
-width:100%;
-border:0;
-z-index:100;
-background-color: #333;
-color: #f0f0e8;
-}
-
-#ticker-content {
-white-space: nowrap;
-position: absolute;
-overflow: hidden;
-}
-
