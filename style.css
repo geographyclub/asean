@@ -139,7 +139,7 @@ nav.show{display:flex;}
 /* fonts */
 
 a{color: white; text-decoration: none;}
-h1{font-family:'Playfair Display'; font-size:45px; font-weight:900; line-height:1; margin:0; padding:0;}
+h1{font-family:'Playfair Display'; font-size:45px; font-weight:600; line-height:1; margin:0; padding:0;}
 h2{font-family:'Open Sans'; font-size:35px; font-weight:800; line-height:1; margin:0; padding:0;}
 h3{font-family:'Open Sans'; font-size:24px; font-weight:800; line-height:1; margin:0; padding:0; letter-spacing: -2px;}
 h4{font-family:'Open Sans'; font-size:12px; font-weight:600; line-height:1; margin:0; padding:0;}
@@ -175,7 +175,9 @@ height:75px;
 margin-top: 125px;
 }
 
-.footer {
+.footer h1 {
+font-size:26px;
+
 }
 
 .footer h2 {
