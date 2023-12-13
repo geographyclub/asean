@@ -113,11 +113,10 @@ banner.innerHTML = `
 updateValues();
 
 var intervalId = setInterval(updateValues, intervalSeconds * 1000);
-
 // To stop the interval after a certain duration
 setTimeout(function () {
     clearInterval(intervalId);
-}, 60000);
+}, 120000);
 
 // insert content
 const container = document.getElementById('jsonContainer');

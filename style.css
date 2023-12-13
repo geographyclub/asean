@@ -84,7 +84,7 @@ box-sizing: border-box;
 flex: 0 0 50%;
 padding: 0 0 5px 0;
 min-width: 160px;
-text-align:left;
+text-align:center;
 }
 
 .flex-column-wide {
