@@ -11,7 +11,7 @@
 <body>
 
 <header>
-<div><a href="#"><h1 style="font-size:18px;">ASEAN<span style="font-style:italic">Primer</span></h1></a></div>
+<div><a href="#"><h1 style="font-size:14px;">ASEAN<span style="font-style:italic">Primer</span></h1></a></div>
 <div class="menu-icon">&#9776;</div>
 <nav>
 <a href="#" onclick="closeMenu()">Home</a>
@@ -29,20 +29,99 @@
 </nav>
 </header>
 
+<div class="container" id="jsonBanner"></div>
 <div class="container" id="jsonContainer"></div>
 
-<script type="application/json" id="indicatorsJSON">
+<script type="application/json" id="jsonIndicators">
 [{"fdi": -284, "gdp": 16678, "pop": 445400, "area": 5765, "country": "Brunei", "exports": 14007, "imports": 9333, "fdi_rank": 10, "gdp_rank": 9, "gdp_rate": -1.6, "pop_rank": 10, "pop_rate": 1.1, "area_rank": 9, "fdi_change": -489.1, "gdp_capita": 37445.9, "labour_rate": 62.7, "pop_density": 85, "total_trade": 23340, "exports_rank": 9, "imports_rank": 9, "gdp_rate_rank": 10, "pop_rate_rank": 6, "exports_to_gdp": 84.0, "imports_to_gdp": 56.0, "inflation_rate": 3.7, "fdi_change_rank": 8, "fdi_change_rate": -238.9, "gdp_capita_rank": 2, "exchange_rate_us": 1.4, "labour_rate_rank": 8, "pop_density_rank": 8, "total_trade_rank": 9, "visitor_arrivals": 0.04, "unemployment_rate": 5.2, "exports_value_rate": 22.3, "imports_value_rate": 29.1, "total_trade_to_gdp": 139.9, "exports_to_gdp_rank": 4, "imports_to_gdp_rank": 6, "inflation_rate_rank": 8, "fdi_change_rate_rank": 10, "exchange_rate_us_rank": 9, "visitor_arrivals_rank": 10, "total_trade_value_rate": 24.9, "unemployment_rate_rank": 3, "exports_value_rate_rank": 4, "imports_value_rate_rank": 2, "total_trade_to_gdp_rank": 5, "total_trade_value_rate_rank": 2}, {"fdi": 3579, "gdp": 29611, "pop": 16843300, "area": 181040, "country": "Cambodia", "exports": 20750, "imports": 29998, "fdi_rank": 7, "gdp_rank": 8, "gdp_rate": 4.8, "pop_rank": 7, "pop_rate": 1.5, "area_rank": 8, "fdi_change": 95.4, "gdp_capita": 1758.0, "labour_rate": 83.7, "pop_density": 95, "total_trade": 50748, "exports_rank": 7, "imports_rank": 7, "gdp_rate_rank": 5, "pop_rate_rank": 2, "exports_to_gdp": 70.1, "imports_to_gdp": 101.3, "inflation_rate": 5.3, "fdi_change_rank": 6, "fdi_change_rate": 2.7, "gdp_capita_rank": 9, "exchange_rate_us": 4087.3, "labour_rate_rank": 1, "pop_density_rank": 7, "total_trade_rank": 7, "visitor_arrivals": 2.3, "unemployment_rate": 1.0, "exports_value_rate": 22.4, "imports_value_rate": 17.7, "total_trade_to_gdp": 171.4, "exports_to_gdp_rank": 5, "imports_to_gdp_rank": 2, "inflation_rate_rank": 6, "fdi_change_rate_rank": 6, "exchange_rate_us_rank": 4, "visitor_arrivals_rank": 7, "total_trade_value_rate": 19.6, "unemployment_rate_rank": 9, "exports_value_rate_rank": 3, "imports_value_rate_rank": 6, "total_trade_to_gdp_rank": 3, "total_trade_value_rate_rank": 6}, {"fdi": 21968, "gdp": 1317259, "pop": 275719900, "area": 1916907, "country": "Indonesia", "exports": 291979, "imports": 237447, "fdi_rank": 2, "gdp_rank": 1, "gdp_rate": 5.3, "pop_rank": 1, "pop_rate": 1.0, "area_rank": 1, "fdi_change": 837.1, "gdp_capita": 4777.5, "labour_rate": 68.6, "pop_density": 147, "total_trade": 529426, "exports_rank": 4, "imports_rank": 5, "gdp_rate_rank": 4, "pop_rate_rank": 7, "exports_to_gdp": 22.2, "imports_to_gdp": 18.0, "inflation_rate": 4.2, "fdi_change_rank": 5, "fdi_change_rate": 4.0, "gdp_capita_rank": 5, "exchange_rate_us": 14870.6, "labour_rate_rank": 4, "pop_density_rank": 4, "total_trade_rank": 5, "visitor_arrivals": 5.5, "unemployment_rate": 5.9, "exports_value_rate": 26.1, "imports_value_rate": 21.0, "total_trade_to_gdp": 40.2, "exports_to_gdp_rank": 9, "imports_to_gdp_rank": 10, "inflation_rate_rank": 7, "fdi_change_rate_rank": 5, "exchange_rate_us_rank": 2, "visitor_arrivals_rank": 4, "total_trade_value_rate": 23.8, "unemployment_rate_rank": 1, "exports_value_rate_rank": 1, "imports_value_rate_rank": 5, "total_trade_to_gdp_rank": 10, "total_trade_value_rate_rank": 3}, {"fdi": 636, "gdp": 15049, "pop": 7442800, "area": 236800, "country": "Laos", "exports": 9564, "imports": 7616, "fdi_rank": 9, "gdp_rank": 10, "gdp_rate": 4.4, "pop_rank": 8, "pop_rate": 1.4, "area_rank": 7, "fdi_change": -436.1, "gdp_capita": 2022.0, "labour_rate": 47.1, "pop_density": 32, "total_trade": 17180, "exports_rank": 10, "imports_rank": 10, "gdp_rate_rank": 6, "pop_rate_rank": 3, "exports_to_gdp": 63.6, "imports_to_gdp": 50.6, "inflation_rate": 23.0, "fdi_change_rank": 7, "fdi_change_rate": -40.7, "gdp_capita_rank": 8, "exchange_rate_us": 14327.0, "labour_rate_rank": 10, "pop_density_rank": 10, "total_trade_rank": 10, "visitor_arrivals": 1.3, "unemployment_rate": 2.4, "exports_value_rate": 24.2, "imports_value_rate": 29.4, "total_trade_to_gdp": 114.2, "exports_to_gdp_rank": 6, "imports_to_gdp_rank": 7, "inflation_rate_rank": 1, "fdi_change_rate_rank": 9, "exchange_rate_us_rank": 3, "visitor_arrivals_rank": 8, "total_trade_value_rate": 26.5, "unemployment_rate_rank": 6, "exports_value_rate_rank": 2, "imports_value_rate_rank": 1, "total_trade_to_gdp_rank": 7, "total_trade_value_rate_rank": 1}, {"fdi": 17096, "gdp": 407085, "pop": 32698100, "area": 330411, "country": "Malaysia", "exports": 357296, "imports": 298534, "fdi_rank": 4, "gdp_rank": 5, "gdp_rate": 8.7, "pop_rank": 6, "pop_rate": 0.2, "area_rank": 5, "fdi_change": 4951.6, "gdp_capita": 12449.8, "labour_rate": 69.3, "pop_density": 99, "total_trade": 655830, "exports_rank": 3, "imports_rank": 4, "gdp_rate_rank": 1, "pop_rate_rank": 10, "exports_to_gdp": 87.8, "imports_to_gdp": 73.3, "inflation_rate": 3.4, "fdi_change_rank": 2, "fdi_change_rate": 40.8, "gdp_capita_rank": 3, "exchange_rate_us": 4.4, "labour_rate_rank": 3, "pop_density_rank": 6, "total_trade_rank": 3, "visitor_arrivals": 10.1, "unemployment_rate": 3.9, "exports_value_rate": 19.4, "imports_value_rate": 25.3, "total_trade_to_gdp": 161.1, "exports_to_gdp_rank": 3, "imports_to_gdp_rank": 4, "inflation_rate_rank": 9, "fdi_change_rate_rank": 2, "exchange_rate_us_rank": 8, "visitor_arrivals_rank": 2, "total_trade_value_rate": 22.0, "unemployment_rate_rank": 4, "exports_value_rate_rank": 6, "imports_value_rate_rank": 3, "total_trade_to_gdp_rank": 4, "total_trade_value_rate_rank": 4}, {"fdi": 2981, "gdp": 62991, "pop": 55770200, "area": 676590, "country": "Myanmar", "exports": 16965, "imports": 17384, "fdi_rank": 8, "gdp_rank": 7, "gdp_rate": 3.5, "pop_rank": 5, "pop_rate": 0.9, "area_rank": 2, "fdi_change": 1975.9, "gdp_capita": 1129.5, "labour_rate": 59.4, "pop_density": 85, "total_trade": 34349, "exports_rank": 8, "imports_rank": 8, "gdp_rate_rank": 8, "pop_rate_rank": 9, "exports_to_gdp": 26.9, "imports_to_gdp": 27.6, "inflation_rate": 16.0, "fdi_change_rank": 4, "fdi_change_rate": 196.6, "gdp_capita_rank": 10, "exchange_rate_us": 1935.5, "labour_rate_rank": 9, "pop_density_rank": 8, "total_trade_rank": 8, "visitor_arrivals": 0.2, "unemployment_rate": 0.5, "exports_value_rate": 19.8, "imports_value_rate": 21.5, "total_trade_to_gdp": 54.5, "exports_to_gdp_rank": 8, "imports_to_gdp_rank": 9, "inflation_rate_rank": 2, "fdi_change_rate_rank": 1, "exchange_rate_us_rank": 5, "visitor_arrivals_rank": 9, "total_trade_value_rate": 20.7, "unemployment_rate_rank": 10, "exports_value_rate_rank": 5, "imports_value_rate_rank": 4, "total_trade_to_gdp_rank": 9, "total_trade_value_rate_rank": 5}, {"fdi": 9200, "gdp": 404284, "pop": 111572300, "area": 300000, "country": "Philippines", "exports": 78930, "imports": 145102, "fdi_rank": 6, "gdp_rank": 6, "gdp_rate": 7.6, "pop_rank": 2, "pop_rate": 1.2, "area_rank": 6, "fdi_change": -2783.4, "gdp_capita": 3623.5, "labour_rate": 64.7, "pop_density": 374, "total_trade": 224032, "exports_rank": 6, "imports_rank": 6, "gdp_rate_rank": 3, "pop_rate_rank": 5, "exports_to_gdp": 19.5, "imports_to_gdp": 35.9, "inflation_rate": 5.8, "fdi_change_rank": 9, "fdi_change_rate": -23.2, "gdp_capita_rank": 7, "exchange_rate_us": 54.5, "labour_rate_rank": 7, "pop_density_rank": 2, "total_trade_rank": 6, "visitor_arrivals": 2.7, "unemployment_rate": 5.4, "exports_value_rate": 5.8, "imports_value_rate": 8.3, "total_trade_to_gdp": 55.4, "exports_to_gdp_rank": 10, "imports_to_gdp_rank": 8, "inflation_rate_rank": 5, "fdi_change_rate_rank": 7, "exchange_rate_us_rank": 6, "visitor_arrivals_rank": 6, "total_trade_value_rate": 7.4, "unemployment_rate_rank": 2, "exports_value_rate_rank": 9, "imports_value_rate_rank": 10, "total_trade_to_gdp_rank": 8, "total_trade_value_rate_rank": 10}, {"fdi": 141187, "gdp": 466602, "pop": 5637000, "area": 728, "country": "Singapore", "exports": 514874, "imports": 475244, "fdi_rank": 1, "gdp_rank": 3, "gdp_rate": 3.6, "pop_rank": 9, "pop_rate": 3.4, "area_rank": 10, "fdi_change": 10086.3, "gdp_capita": 82774.6, "labour_rate": 70.0, "pop_density": 7688, "total_trade": 990117, "exports_rank": 1, "imports_rank": 1, "gdp_rate_rank": 7, "pop_rate_rank": 1, "exports_to_gdp": 110.3, "imports_to_gdp": 101.9, "inflation_rate": 6.1, "fdi_change_rank": 1, "fdi_change_rate": 7.7, "gdp_capita_rank": 1, "exchange_rate_us": 1.4, "labour_rate_rank": 2, "pop_density_rank": 1, "total_trade_rank": 1, "visitor_arrivals": 6.3, "unemployment_rate": 2.8, "exports_value_rate": 12.7, "imports_value_rate": 17.0, "total_trade_to_gdp": 212.2, "exports_to_gdp_rank": 1, "imports_to_gdp_rank": 1, "inflation_rate_rank": 3, "fdi_change_rate_rank": 4, "exchange_rate_us_rank": 9, "visitor_arrivals_rank": 3, "total_trade_value_rate": 14.8, "unemployment_rate_rank": 5, "exports_value_rate_rank": 7, "imports_value_rate_rank": 7, "total_trade_to_gdp_rank": 1, "total_trade_value_rate_rank": 7}, {"fdi": 9940, "gdp": 495302, "pop": 66090000, "area": 513120, "country": "Thailand", "exports": 287165, "imports": 305123, "fdi_rank": 5, "gdp_rank": 2, "gdp_rate": 2.6, "pop_rank": 4, "pop_rate": 1.3, "area_rank": 3, "fdi_change": -4701.3, "gdp_capita": 7494.4, "labour_rate": 68.1, "pop_density": 129, "total_trade": 592288, "exports_rank": 5, "imports_rank": 3, "gdp_rate_rank": 9, "pop_rate_rank": 4, "exports_to_gdp": 58.0, "imports_to_gdp": 61.6, "inflation_rate": 6.1, "fdi_change_rank": 10, "fdi_change_rate": -32.1, "gdp_capita_rank": 4, "exchange_rate_us": 35.1, "labour_rate_rank": 6, "pop_density_rank": 5, "total_trade_rank": 4, "visitor_arrivals": 11.2, "unemployment_rate": 1.3, "exports_value_rate": 5.8, "imports_value_rate": 13.4, "total_trade_to_gdp": 119.6, "exports_to_gdp_rank": 7, "imports_to_gdp_rank": 5, "inflation_rate_rank": 3, "fdi_change_rate_rank": 8, "exchange_rate_us_rank": 7, "visitor_arrivals_rank": 1, "total_trade_value_rate": 9.6, "unemployment_rate_rank": 8, "exports_value_rate_rank": 9, "imports_value_rate_rank": 8, "total_trade_to_gdp_rank": 6, "total_trade_value_rate_rank": 8}, {"fdi": 17900, "gdp": 408804, "pop": 99461700, "area": 331340, "country": "Vietnam", "exports": 370909, "imports": 358789, "fdi_rank": 3, "gdp_rank": 4, "gdp_rate": 8.0, "pop_rank": 3, "pop_rate": 1.0, "area_rank": 4, "fdi_change": 2239.9, "gdp_capita": 4110.2, "labour_rate": 68.5, "pop_density": 317, "total_trade": 729698, "exports_rank": 2, "imports_rank": 2, "gdp_rate_rank": 2, "pop_rate_rank": 7, "exports_to_gdp": 90.7, "imports_to_gdp": 87.8, "inflation_rate": 3.2, "fdi_change_rank": 3, "fdi_change_rate": 14.3, "gdp_capita_rank": 6, "exchange_rate_us": 23271.1, "labour_rate_rank": 5, "pop_density_rank": 3, "total_trade_rank": 2, "visitor_arrivals": 3.7, "unemployment_rate": 2.1, "exports_value_rate": 10.5, "imports_value_rate": 8.5, "total_trade_to_gdp": 178.5, "exports_to_gdp_rank": 2, "imports_to_gdp_rank": 3, "inflation_rate_rank": 10, "fdi_change_rate_rank": 3, "exchange_rate_us_rank": 1, "visitor_arrivals_rank": 5, "total_trade_value_rate": 9.5, "unemployment_rate_rank": 7, "exports_value_rate_rank": 8, "imports_value_rate_rank": 9, "total_trade_to_gdp_rank": 2, "total_trade_value_rate_rank": 9}]
+</script>
+
+<script type="application/json" id="jsonColumns">
+{"pop":"Population", "pop_rate":"Pop Growth Rate (%)", "area":"Area (km²)", "pop_density":"Pop Density (/km²)", "labour_rate":"Labour Rate (%)", "unemployment_rate":"Unemployment Rate (%)", "inflation_rate":"Inflation Rate (%)", "visitor_arrivals":"Visitor Arrivals (mil)", "gdp":"GDP (US$ mil)", "gdp_rate":"GDP Growth Rate (%)", "gdp_capita":"GDP Per Capita (US$)", "exports_to_gdp":"Exports-to-GDP (%)", "imports_to_gdp":"Imports-to-GDP (%)", "total_trade_to_gdp":"Trade-to-GDP (%)", "exports":"Exports (US$ mil)", "exports_value_rate":"Exports Growth Rate (%)", "imports":"Imports (US$ mil)", "imports_value_rate":"Imports Growth Rate (%)", "total_trade":"Total Trade (US$ mil)", "total_trade_value_rate":"Trade Growth Rate (%)", "fdi":"FDI (US$ mil)", "fdi_change_rate":"FDI Change Rate (%)", "fdi_change":"FDI Change (US$ mil)"}
 </script>
 
 <!-- handle JSON data -->
 <script>
 // read json
-var jsonArray = JSON.parse(document.getElementById('indicatorsJSON').textContent);
+var jsonIndicatorsArray = JSON.parse(document.getElementById('jsonIndicators').textContent);
+var jsonColumnsArray = JSON.parse(document.getElementById('jsonColumns').textContent);
+
+function getRandomKeyAndValue(jsonObject) {
+    var keys = Object.keys(jsonObject);
+    var randomIndex = Math.floor(Math.random() * keys.length);
+    var randomKey = keys[randomIndex];
+    var randomValue = jsonObject[randomKey];
+    return { key: randomKey, value: randomValue };
+}
+
+function getRandomItem(array) {
+var randomIndex = Math.floor(Math.random() * array.length);
+return array[randomIndex];
+}
+
+var intervalSeconds = 5;  // Set the interval in seconds
+var lastSelectedCountry; 
+var banner = document.getElementById("jsonBanner"); // Replace "banner" with the ID of your banner element
+var key; var columnName;
+
+function getRandomCountryAndRank(array, key) {
+    // Ensure the array is not empty
+    if (array.length === 0) {
+        return { resultString: "Array is empty", value: undefined, countryName: undefined };
+    }
+
+    // Remove the last selected country from the array
+    var filteredArray = array.filter(function (item) {
+        return item["country"] !== lastSelectedCountry;
+    });
+
+    // Choose a random item from the filtered array
+    var randomItem = getRandomItem(filteredArray);
+
+    // Update the lastSelectedCountry variable
+    lastSelectedCountry = randomItem["country"];
+
+    // Rest of your existing logic...
+    var countryName = randomItem["country"];
+    var rankKey = key + "_rank";
+    var rank = randomItem[rankKey];
+    var value = randomItem[key];
+
+    if (countryName && rank !== undefined && value !== undefined) {
+        var resultString = `Country: ${countryName}, ${key} Rank: ${rank}`;
+        return { resultString: resultString, value: value, countryName: countryName };
+    }
+
+    return { resultString: "Country, Rank, and Value not found for the random item", value: undefined, countryName: undefined };
+}
+
+var result1; var result2;
+function updateValues() {
+	key = getRandomKeyAndValue(jsonColumnsArray);
+    result1 = getRandomCountryAndRank(jsonIndicatorsArray, key.key);
+    result2 = getRandomCountryAndRank(jsonIndicatorsArray, key.key);
+// make banner
+banner.classList.add('item');
+banner.innerHTML = `
+<div class="flex-container" style="align-items:flex-start;">
+<div class="flex-column-wide" style="text-align:center;"><h4 style="font-weight:800; font-size:24px;">${key.value}</h4></div>
+<div class="flex-column" style="text-align:center;"><h2>${result1.value.toLocaleString()}</h2><h1 style="font-weight:400; font-size:20px">${result1.countryName}</h1></div>
+<div class="flex-column" style="text-align:center;"><h2>${result2.value.toLocaleString()}</h2><h1 style="font-weight:400; font-size:20px">${result2.countryName}</h1></div>
+</div>
+`;
+}
+updateValues();
+
+var intervalId = setInterval(updateValues, intervalSeconds * 1000);
+
+// To stop the interval after a certain duration
+setTimeout(function () {
+    clearInterval(intervalId);
+}, 60000);
 
 // insert content
 const container = document.getElementById('jsonContainer');
-jsonArray.forEach(item => {
+jsonIndicatorsArray.forEach(item => {
 const jsonItem = document.createElement('div');
 jsonItem.classList.add('item');
 
@@ -92,12 +171,13 @@ container.appendChild(jsonItem);
 
 </script>
 
-<div class="flex-container">
-  <div class="flex-column-wide"><h1 id="sources">Sources</h1><hr></div>
-  <div class="flex-column-wide">
-  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.1" target="_blank"><h4 style="color:#333">1. ASEAN Member States: Selected Basic Indicators</h4></a>
-  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.2" target="_blank"><h4 style="color:#333">2. ASEAN Member States: Selected Key Macroeconomic Indicators</h4></a>
+<div class="container">
+<div class="flex-container" class="footer">
+  <div class="flex-column-wide"><h1 id="sources">Sources</h1><hr>
+  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.1" target="_blank" style="color:#333"><h3>1. ASEAN Member States: Selected Basic Indicators</h3></a>
+  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.2" target="_blank" style="color:#333"><h3>2. ASEAN Member States: Selected Key Macroeconomic Indicators</h3></a>
   </div>
+</div>
 </div>
 
 <!-- close menu -->
@@ -114,7 +194,7 @@ document.querySelector('nav').classList.remove('show');
 <script>
 function scrollToSection(sectionId) {
 const targetSection = document.getElementById(sectionId);
-const offset = 50;
+const offset = 150;
 
 if (targetSection) {
 window.scrollTo({
