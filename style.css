@@ -76,6 +76,7 @@ flex-wrap: wrap;
 align-items: flex-end;
 overflow: hidden;
 text-align:center;
+padding-bottom:5px;
 }
 
 .flex-column {
@@ -157,7 +158,7 @@ padding: 0 2px 0 2px;
 font-size:12px;
 }
 
-hr{margin:5px 0 0 0; padding:0;}
+hr{margin:3px 0; padding:0;}
 
 #jsonBanner {
 position:fixed;

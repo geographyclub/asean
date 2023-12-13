@@ -59,7 +59,7 @@ var randomIndex = Math.floor(Math.random() * array.length);
 return array[randomIndex];
 }
 
-var intervalSeconds = 5;  // Set the interval in seconds
+var intervalSeconds = 7;  // Set the interval in seconds
 var lastSelectedCountry; 
 var banner = document.getElementById("jsonBanner"); // Replace "banner" with the ID of your banner element
 var key; var columnName;
@@ -103,10 +103,10 @@ function updateValues() {
 // make banner
 banner.classList.add('item');
 banner.innerHTML = `
-<div class="flex-container" style="align-items:baseline;">
-<div class="flex-column-wide" style="text-align:left;"><h4 style="font-weight:600; font-size:16px;">${key.value}</h4></div>
-<div class="flex-column" style="text-align:center;"><h2 style="font-size:30px;">${result1.value.toLocaleString()}</h2><h1 style="font-weight:400; font-size:16px">${result1.countryName}</h1></div>
-<div class="flex-column" style="text-align:center;"><h2 style="font-size:30px;">${result2.value.toLocaleString()}</h2><h1 style="font-weight:400; font-size:16px">${result2.countryName}</h1></div>
+<div class="flex-container" style="align-items:stretch;">
+<div class="flex-column" style="text-align:center;"><h1 style="font-weight:400; font-size:20px">${result1.countryName}</h1><h2 style="font-size:30px;">${result1.value.toLocaleString()}</h2><h4 style="font-weight:600; font-size:12px;">${key.value}</h4></div>
+<div class="flex-column" style="text-align:center;"><h1 style="font-weight:400; font-size:20px">${result2.countryName}</h1><h2 style="font-size:30px;">${result2.value.toLocaleString()}</h2><h4 style="font-weight:600; font-size:12px;">${key.value}</h4></div>
+<div class="flex-column-wide" style="text-align:left;"></div>
 </div>
 `;
 }
@@ -174,8 +174,8 @@ container.appendChild(jsonItem);
 <div class="container">
 <div class="flex-container" class="footer">
   <div class="flex-column-wide"><h1 id="sources">Sources</h1><hr>
-  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.1" target="_blank" style="color:#333"><h3>1. ASEAN Member States: Selected Basic Indicators</h3></a>
-  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.2" target="_blank" style="color:#333"><h3>2. ASEAN Member States: Selected Key Macroeconomic Indicators</h3></a>
+  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.1" target="_blank" style="color:#333"><h2 style="font-weight:400;">1. ASEAN Member States: Selected Basic Indicators</h2></a>
+  <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.2" target="_blank" style="color:#333"><h2 style="font-weight:400;">2. ASEAN Member States: Selected Key Macroeconomic Indicators</h2></a>
   </div>
 </div>
 </div>
