@@ -104,9 +104,9 @@ function updateValues() {
 banner.classList.add('item');
 banner.innerHTML = `
 <div class="flex-container" style="align-items:stretch;">
-<div class="flex-column banner-text" style="text-align:center;"><h1>${result1.countryName}</h1><h3>${result1.value.toLocaleString()}</h3><h4>${key.value}</h4></div>
-<div class="flex-column banner-text" style="text-align:center;"><h1>${result2.countryName}</h1><h3>${result2.value.toLocaleString()}</h3><h4>${key.value}</h4></div>
-<div class="flex-column-wide" style="text-align:left;"></div>
+<div class="flex-column banner-text" style="text-align:center;"><h1>${result1.countryName}</h1><h3>${result1.value.toLocaleString()}</h3></div>
+<div class="flex-column banner-text" style="text-align:center;"><h1>${result2.countryName}</h1><h3>${result2.value.toLocaleString()}</h3></div>
+<div class="flex-column-wide banner-text" style="text-align:center;"><h4>${key.value}</h4></div>
 </div>
 `;
 }
@@ -172,8 +172,8 @@ container.appendChild(jsonItem);
 </script>
 
 <div class="container">
-<div class="flex-container" class="footer">
-  <div class="flex-column-wide"><h1 id="sources">Sources</h1><hr>
+<div class="flex-container">
+  <div class="flex-column-wide footer""><h1 id="sources">Sources</h1><hr>
   <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.1" target="_blank" style="color:#333"><h2 style="font-weight:400;">1. ASEAN Member States: Selected Basic Indicators</h2></a>
   <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.2" target="_blank" style="color:#333"><h2 style="font-weight:400;">2. ASEAN Member States: Selected Key Macroeconomic Indicators</h2></a>
   </div>

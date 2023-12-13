@@ -73,7 +73,7 @@ overflow: hidden;
 box-sizing: border-box;
 display: flex;
 flex-wrap: wrap;
-align-items: flex-end;
+align-items: flex-top;
 overflow: hidden;
 text-align:center;
 padding-bottom:5px;
@@ -142,7 +142,7 @@ a{color: white; text-decoration: none;}
 h1{font-family:'Playfair Display'; font-size:45px; font-weight:900; line-height:1; margin:0; padding:0;}
 h2{font-family:'Open Sans'; font-size:35px; font-weight:800; line-height:1; margin:0; padding:0;}
 h3{font-family:'Open Sans'; font-size:24px; font-weight:800; line-height:1; margin:0; padding:0; letter-spacing: -2px;}
-h4{font-family:'Open Sans'; font-size:14px; font-weight:600; line-height:1; margin:0; padding:0; letter-spacing: -1px;}
+h4{font-family:'Open Sans'; font-size:12px; font-weight:600; line-height:1; margin:0; padding:0;}
 p{font-family:Sans; font-size:12px; font-weight:600; line-height:1.2; margin:0; padding:0;}
 
 .rank {
@@ -178,6 +178,10 @@ margin-top: 125px;
 .footer {
 }
 
+.footer h2 {
+font-size:16px;
+}
+
 .banner-text h1 {
 font-weight:400;
 font-size:20px;
@@ -187,5 +191,5 @@ font-size: 30px;
 }
 .banner-text h4 {
 font-weight:600;
-font-size:12px;
+font-size:14px;
 }
