@@ -14,6 +14,8 @@
       <div class="menu-icon">&#9776;</div>
       <nav>
         <a href="#" onclick="closeMenu()">Home</a>
+        <a href="#" onclick="scrollToSection('sources');">Sources</a>
+        <h4 style="color:#ccc; font-size:10px; padding:15px 5px 5px 5px;">COUNTRIES</h4>
         <a href="#" onclick="scrollToSection('Brunei');">Brunei</a>
         <a href="#" onclick="scrollToSection('Cambodia');">Cambodia</a>
         <a href="#" onclick="scrollToSection('Indonesia');">Indonesia</a>
@@ -24,11 +26,9 @@
         <a href="#" onclick="scrollToSection('Singapore');">Singapore</a>
         <a href="#" onclick="scrollToSection('Thailand');">Thailand</a>
         <a href="#" onclick="scrollToSection('Vietnam');">Vietnam</a>
-        <a href="#" onclick="scrollToSection('sources');">Sources</a>
       </nav>
     </header>
 
-    <div class="container" id="jsonBanner"></div>
     <div class="container" id="jsonContainer"></div>
 
 <script type="application/json" id="jsonIndicators">
@@ -44,82 +44,6 @@
   // Read JSON
   var jsonIndicatorsArray = JSON.parse(document.getElementById('jsonIndicators').textContent);
   var jsonColumnsArray = JSON.parse(document.getElementById('jsonColumns').textContent);
-
-  function getRandomKeyAndValue(jsonObject) {
-    var keys = Object.keys(jsonObject);
-    var randomIndex = Math.floor(Math.random() * keys.length);
-    var randomKey = keys[randomIndex];
-    var randomValue = jsonObject[randomKey];
-    return { key: randomKey, value: randomValue };
-  }
-
-  function getRandomItem(array) {
-    var randomIndex = Math.floor(Math.random() * array.length);
-    return array[randomIndex];
-  }
-
-  var intervalSeconds = 7; // Set the interval in seconds
-  var lastSelectedCountry;
-  var banner = document.getElementById("jsonBanner"); // Replace "banner" with the ID of your banner element
-  var key;
-  var columnName;
-
-  function getRandomCountryAndRank(array, key) {
-    // Ensure the array is not empty
-    if (array.length === 0) {
-      return { resultString: "Array is empty", value: undefined, countryName: undefined };
-    }
-
-    // Remove the last selected country from the array
-    var filteredArray = array.filter(function (item) {
-      return item["country"] !== lastSelectedCountry;
-    });
-
-    // Choose a random item from the filtered array
-    var randomItem = getRandomItem(filteredArray);
-
-    // Update the lastSelectedCountry variable
-    lastSelectedCountry = randomItem["country"];
-
-    // Rest of your existing logic...
-    var countryName = randomItem["country"];
-    var rankKey = key + "_rank";
-    var rank = randomItem[rankKey];
-    var value = randomItem[key];
-
-    if (countryName && rank !== undefined && value !== undefined) {
-      var resultString = `Country: ${countryName}, ${key} Rank: ${rank}`;
-      return { resultString: resultString, value: value, countryName: countryName };
-    }
-
-    return { resultString: "Country, Rank, and Value not found for the random item", value: undefined, countryName: undefined };
-  }
-
-  var result1;
-  var result2;
-
-  function updateValues() {
-    key = getRandomKeyAndValue(jsonColumnsArray);
-    result1 = getRandomCountryAndRank(jsonIndicatorsArray, key.key);
-    result2 = getRandomCountryAndRank(jsonIndicatorsArray, key.key);
-    // Make banner
-    banner.classList.add('item');
-    banner.innerHTML = `
-      <div class="flex-container" style="align-items:stretch;">
-        <div class="flex-column banner-text" style="text-align:center;"><h1>${result1.countryName}</h1><h3>${result1.value.toLocaleString()}</h3></div>
-        <div class="flex-column banner-text" style="text-align:center;"><h1>${result2.countryName}</h1><h3>${result2.value.toLocaleString()}</h3></div>
-        <div class="flex-column-wide banner-text" style="text-align:center;"><h4>${key.value}</h4></div>
-      </div>
-    `;
-  }
-
-  updateValues();
-
-  var intervalId = setInterval(updateValues, intervalSeconds * 1000);
-  // To stop the interval after a certain duration
-  setTimeout(function () {
-    clearInterval(intervalId);
-  }, 120000);
 
   // Insert content
   const container = document.getElementById('jsonContainer');
@@ -203,7 +127,7 @@
 <script>
   function scrollToSection(sectionId) {
     const targetSection = document.getElementById(sectionId);
-    const offset = 125;
+    const offset = 50;
 
     if (targetSection) {
       window.scrollTo({

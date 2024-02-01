@@ -15,9 +15,10 @@ nav.show {
 }
 
 nav a {
+  font-size: 14px;
   color: white;
   text-decoration: none;
-  margin: 10px;
+  margin: 5px;
 }
 
 .menu-icon {
@@ -217,7 +218,7 @@ hr {
 }
 
 #jsonContainer {
-  margin-top: 125px;
+  margin-top: 50px;
 }
 
 .footer h1 {
