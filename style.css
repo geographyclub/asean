@@ -58,7 +58,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 5px;
 }
 
 .item {
@@ -66,6 +65,7 @@ header {
   box-sizing: border-box;
   text-align: left;
   overflow: hidden;
+  padding:5px; 
 }
 
 .flex-container {
@@ -75,13 +75,13 @@ header {
   align-items: flex-top;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .flex-column {
   box-sizing: border-box;
   flex: 0 0 50%;
-  padding: 0 0 5px 0;
+  padding: 3px 0;
   min-width: 160px;
   text-align: center;
 }
@@ -90,6 +90,7 @@ header {
   box-sizing: border-box;
   flex: 0 0 100%;
   text-align: left;
+  padding: 5px 0;
 }
 
 .image-container {
@@ -99,7 +100,7 @@ header {
   height: auto;
   width: 100%;
   max-width: 768px;
-  margin: 0 auto;
+  margin: 10px auto;
   align-items: center;
   justify-content: center;
 }
@@ -162,12 +163,12 @@ h2 {
 
 h3 {
   font-family: 'Open Sans';
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   line-height: 1;
   margin: 0;
   padding: 0;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 h4 {

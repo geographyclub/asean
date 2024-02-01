@@ -47,7 +47,7 @@
 
   // Insert content
   const container = document.getElementById('jsonContainer');
-  jsonIndicatorsArray.forEach(item => {
+  jsonIndicatorsArray.forEach((item, index) => {
     const jsonItem = document.createElement('div');
     jsonItem.classList.add('item');
 
@@ -92,6 +92,9 @@
         <div class="flex-column"><h3>${item.fdi_change.toLocaleString()}<span class="rank">#${item.fdi_change_rank}</span></h3><h4>FDI Change (US$ mil)</h4></div>
       </div>
     `;
+    if (index % 2 === 1) {
+    jsonItem.style.backgroundColor = '#ddd';
+  }
     container.appendChild(jsonItem);
   });
 
