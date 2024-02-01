@@ -222,12 +222,22 @@ hr {
   margin-top: 50px;
 }
 
+.footer {
+  padding:5px; 
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
 .footer h1 {
   font-size: 26px;
 }
 
 .footer h2 {
   font-size: 16px;
+  line-height: 1.2;
+  padding-bottom: 5px;
 }
 
 .banner-text h1 {
