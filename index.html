@@ -55,41 +55,41 @@
       <div class="flex-column-wide"><h1 id="${item.country}">${item.country}</h1><hr></div>
       <div id="map-window" class="image-container"><img id="map" class="image" src="img/${item.country.toLowerCase()}.svg"></div>
       <div class="flex-container">
-        <div class="flex-column"><h3>${item.pop.toLocaleString()}<span class="rank">#${item.pop_rank}</span></h3><h4>Population</h4></div>
-        <div class="flex-column"><h3>${item.pop_rate.toLocaleString()}<span class="rank">#${item.pop_rate_rank}</span></h3><h4>Pop Growth Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.area.toLocaleString()}<span class="rank">#${item.area_rank}</span></h3><h4>Area (km²)</h4></div>
-        <div class="flex-column"><h3>${item.pop_density.toLocaleString()}<span class="rank">#${item.pop_density_rank}</span></h3><h4>Pop Density (/km²)</h4></div>
-        <div class="flex-column"><h3>${item.labour_rate.toLocaleString()}<span class="rank">#${item.labour_rate_rank}</span></h3><h4>Labour Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.unemployment_rate.toLocaleString()}<span class="rank">#${item.unemployment_rate_rank}</span></h3><h4>Unemployment Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.inflation_rate.toLocaleString()}<span class="rank">#${item.inflation_rate_rank}</span></h3><h4>Inflation Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.visitor_arrivals.toLocaleString()}<span class="rank">#${item.visitor_arrivals_rank}</span></h3><h4>Visitor Arrivals (mil)</h4></div>
+        <div class="flex-column"><h3>${item.pop.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.pop_rank)}">#${item.pop_rank}</span></h3><h4>Population</h4></div>
+        <div class="flex-column"><h3>${item.pop_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.pop_rate_rank)}">#${item.pop_rate_rank}</span></h3><h4>Pop Growth Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.area.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.area_rank)}">#${item.area_rank}</span></h3><h4>Area (km²)</h4></div>
+        <div class="flex-column"><h3>${item.pop_density.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.pop_density_rank)}">#${item.pop_density_rank}</span></h3><h4>Pop Density (/km²)</h4></div>
+        <div class="flex-column"><h3>${item.labour_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.labour_rate_rank)}">#${item.labour_rate_rank}</span></h3><h4>Labour Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.unemployment_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.unemployment_rate_rank)}">#${item.unemployment_rate_rank}</span></h3><h4>Unemployment Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.inflation_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.inflation_rate_rank)}">#${item.inflation_rate_rank}</span></h3><h4>Inflation Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.visitor_arrivals.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.visitor_arrivals_rank)}">#${item.visitor_arrivals_rank}</span></h3><h4>Visitor Arrivals (mil)</h4></div>
       </div>
 
       <div class="flex-container">
         <div class="flex-column-wide"><h4 style="font-weight:600; font-size:10px">GROSS DOMESTIC PRODUCT <span style="color:#aaa">${item.country.toUpperCase()}</span></h4><hr></div>
-        <div class="flex-column"><h3>${item.gdp.toLocaleString()}<span class="rank">#${item.gdp_rank}</span></h3><h4>GDP (US$ mil)</h4></div>
-        <div class="flex-column"><h3>${item.gdp_rate.toLocaleString()}<span class="rank">#${item.gdp_rate_rank}</span></h3><h4>GDP Growth Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.gdp_capita.toLocaleString()}<span class="rank">#${item.gdp_capita_rank}</span></h3><h4>GDP Per Capita (US$)</h4></div>
-        <div class="flex-column"><h3>${item.exports_to_gdp.toLocaleString()}<span class="rank">#${item.exports_to_gdp_rank}</span></h3><h4>Exports-to-GDP (%)</h4></div>
-        <div class="flex-column"><h3>${item.imports_to_gdp.toLocaleString()}<span class="rank">#${item.imports_to_gdp_rank}</span></h3><h4>Imports-to-GDP (%)</h4></div>
-        <div class="flex-column"><h3>${item.total_trade_to_gdp.toLocaleString()}<span class="rank">#${item.total_trade_to_gdp_rank}</span></h3><h4>Trade-to-GDP (%)</h4></div>
+        <div class="flex-column"><h3>${item.gdp.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.gdp_rank)}">#${item.gdp_rank}</span></h3><h4>GDP (US$ mil)</h4></div>
+        <div class="flex-column"><h3>${item.gdp_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.gdp_rate_rank)}">#${item.gdp_rate_rank}</span></h3><h4>GDP Growth Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.gdp_capita.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.gdp_capita_rank)}">#${item.gdp_capita_rank}</span></h3><h4>GDP Per Capita (US$)</h4></div>
+        <div class="flex-column"><h3>${item.exports_to_gdp.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.exports_to_gdp_rank)}">#${item.exports_to_gdp_rank}</span></h3><h4>Exports-to-GDP (%)</h4></div>
+        <div class="flex-column"><h3>${item.imports_to_gdp.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.imports_to_gdp_rank)}">#${item.imports_to_gdp_rank}</span></h3><h4>Imports-to-GDP (%)</h4></div>
+        <div class="flex-column"><h3>${item.total_trade_to_gdp.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.total_trade_to_gdp_rank)}">#${item.total_trade_to_gdp_rank}</span></h3><h4>Trade-to-GDP (%)</h4></div>
       </div>
 
       <div class="flex-container">
         <div class="flex-column-wide"><h4 style="font-weight:600; font-size:10px">TRADE <span style="color:#aaa">${item.country.toUpperCase()}</span></h4><hr></div>
-        <div class="flex-column"><h3>${item.exports.toLocaleString()}<span class="rank">#${item.exports_rank}</span></h3><h4>Exports (US$ mil)</h4></div>
-        <div class="flex-column"><h3>${item.exports_value_rate.toLocaleString()}<span class="rank">#${item.exports_value_rate_rank}</span></h3><h4>Exports Growth Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.imports.toLocaleString()}<span class="rank">#${item.imports_rank}</span></h3><h4>Imports (US$ mil)</h4></div>
-        <div class="flex-column"><h3>${item.imports_value_rate.toLocaleString()}<span class="rank">#${item.imports_value_rate_rank}</span></h3><h4>Imports Growth Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.total_trade.toLocaleString()}<span class="rank">#${item.total_trade_rank}</span></h3><h4>Total Trade (US$ mil)</h4></div>
-        <div class="flex-column"><h3>${item.total_trade_value_rate.toLocaleString()}<span class="rank">#${item.total_trade_value_rate_rank}</span></h3><h4>Trade Growth Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.exports.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.exports_rank)}">#${item.exports_rank}</span></h3><h4>Exports (US$ mil)</h4></div>
+        <div class="flex-column"><h3>${item.exports_value_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.exports_value_rate_rank)}">#${item.exports_value_rate_rank}</span></h3><h4>Exports Growth Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.imports.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.imports_rank)}">#${item.imports_rank}</span></h3><h4>Imports (US$ mil)</h4></div>
+        <div class="flex-column"><h3>${item.imports_value_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.imports_value_rate_rank)}">#${item.imports_value_rate_rank}</span></h3><h4>Imports Growth Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.total_trade.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.total_trade_rank)}">#${item.total_trade_rank}</span></h3><h4>Total Trade (US$ mil)</h4></div>
+        <div class="flex-column"><h3>${item.total_trade_value_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.total_trade_value_rate_rank)}">#${item.total_trade_value_rate_rank}</span></h3><h4>Trade Growth Rate (%)</h4></div>
       </div>
 
       <div class="flex-container">
         <div class="flex-column-wide"><h4 style="font-weight:600; font-size:10px">FOREIGN DIRECT INVESTMENT <span style="color:#aaa">${item.country.toUpperCase()}</span></h4><hr></div>
-        <div class="flex-column"><h3>${item.fdi.toLocaleString()}<span class="rank">#${item.fdi_rank}</span></h3><h4>FDI (US$ mil)</h4></div>
-        <div class="flex-column"><h3>${item.fdi_change_rate.toLocaleString()}<span class="rank">#${item.fdi_change_rate_rank}</span></h3><h4>FDI Change Rate (%)</h4></div>
-        <div class="flex-column"><h3>${item.fdi_change.toLocaleString()}<span class="rank">#${item.fdi_change_rank}</span></h3><h4>FDI Change (US$ mil)</h4></div>
+        <div class="flex-column"><h3>${item.fdi.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.fdi_rank)}">#${item.fdi_rank}</span></h3><h4>FDI (US$ mil)</h4></div>
+        <div class="flex-column"><h3>${item.fdi_change_rate.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.fdi_change_rate_rank)}">#${item.fdi_change_rate_rank}</span></h3><h4>FDI Change Rate (%)</h4></div>
+        <div class="flex-column"><h3>${item.fdi_change.toLocaleString()} <span class="rank" style="background-color: ${getRankColor(item.fdi_change_rank)}">#${item.fdi_change_rank}</span></h3><h4>FDI Change (US$ mil)</h4></div>
       </div>
     `;
     if (index % 2 === 1) {
@@ -97,6 +97,25 @@
   }
     container.appendChild(jsonItem);
   });
+
+function getRankColor(rank) {
+// Define color stops
+const colorStops = {
+1: '#3498db', // Blue
+4: '#2ecc71', // Green
+7: '#f39c12', // Orange
+10: '#e74c3c' // Red
+};
+
+// Default color for ranks not in the specified range
+const defaultColor = 'gray';
+
+// Find the closest color stop
+let closestStop = Object.keys(colorStops).reduce((prev, curr) => Math.abs(curr - rank) < Math.abs(prev - rank) ? curr : prev);
+
+// Return the corresponding color or default color
+return colorStops[closestStop] || defaultColor;
+}
 
 </script>
 
@@ -107,7 +126,7 @@
 <a href="https://data.aseanstats.org/indicator/AST.STC.TBL.2" target="_blank" style="color:#333"><h2>2. ASEAN Member States: Selected Key Macroeconomic Indicators</h2></a>
 
 <h1 id="about">About</h1><hr>
-<h2 style="margin-bottom:15px;"><span style="">Web developer</span> and <span style="">map maker</span> with a background in Geography and English.</h2>
+<h2><span style="">Web developer</span> and <span style="">map maker</span> with a background in Geography and English.</h2>
 <p id="contact">EMAIL</p>
 <a href="mailto:emailstevekim@gmail.com"><h2>emailstevekim@gmail.com</h2></a>
 <p>TWITTER</p>
